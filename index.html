@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Forms in html</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <div>
+        <h2> Why use forms?</h2>
+        <p> We used form to collet user input, and the input is often sent to a server for processing. </p>
+    </div>
+    <div>
+        <h2>html < form> element.
+        </h2>
+        <p> HTML <d>
+                < form>
+            </d> element is used to create and HTML form user input. <br>
+
+            <b>Syntax:</b> <br>
+            < form> <br>
+
+                form elements <br>
+
+                < /form> <br>
+
+        </p>
+        <p>
+            <d>
+                < form>
+
+            </d>pelements contain a different tipes of the elements: <br>
+            text fields, checkboxes, radio buttons, sumbit buttons, ...
+
+        </p>
+
+        <div>
+            <h2> html < input> Element</h2>
+            <p>
+                <d>
+                    < input>
+                </d>element can be displayed in different ways. <br>
+
+            </p>
+
+            <p>
+                <b> input type="text"</b> Displayes a single-line text input field.<br>
+
+                <b>input type ="radio"</b> Displayes a radio button for selecting one in different choices.<br>
+
+                <b>input type ="checkboxe"</b>. Displayes a checkbox for selecting zero or none in different choices
+                <br>
+                <b> input type="submit"</b> Displayes a submit button <br>
+                <b> input type="button" </b> Displayes a button to click.
+
+            </p>
+        </div>
+
+
+        <div>
+            <h2> Text fields</h2>
+
+            <d>
+                < input type="text">
+            </d>show a single line input field for text.
+
+
+            <form>
+                <label for='firsName'> First Name: </label><br>
+                <input type='text' id='firsName' name="firstName"><br>
+                <label for="lastName"> Last Name: </label><br>
+                <input type="text" id="lastName" name="lastName">
+
+
+            </form>
+
+            <div>
+                <h2> label</h2>
+
+                <d>label</d> tag defines a label for many form elements.<br>
+                for attribute of the <d>label</d> tag should be equal to the <d>id</d> attribute of the <d>input</d><br>
+                element to bind them together. <br>
+
+                <b>Syntax:</b><br>
+                form <br>
+                label for="userId" LabelName><br>
+
+                form<br>
+
+                Example: <br><br>
+
+                <form>
+                    <label for="Label_Form">Label Element:</label>
+                </form>
+
+
+
+
+
+
+            </div>
+
+            <div>
+                <h2>Radio</h2>
+
+                <d> radio </d> buttons let a user select <d>One </d> of a limited number of choices.<br>
+                <b>Syntax:</b><br>
+                form <br>
+                input type="radio" id="name" name="optional" value='name'><br>
+                form
+            </div>
+
+            <p> Select your favoryte class:</p>
+
+            <form>
+
+                <input type="radio" id="comp335" name="My_fav_class" value="Web_Development">
+                <label for="comp335">Web_Development</label> <br>
+                <input type="radio" id="math162" name="My_fav_class" value="Calc_II">
+                <label for='math162'>CalculosII</label>
+
+            </form>
+
+            <p id="saySome"></p>
+
+            <button onclick="radioLabel()">radioInput</button>
+
+        </div>
+
+    </div>
+
+    <div>
+
+        <h2> Checkboxes</h2><br>
+
+        <d>checkboxes</d> let user select <d>Zero</d> or more options of a limited number of choices.<br>
+        <b>Syntax:</b><br>
+        form<br>
+        input type="checkbox" id="UserId" name="optional" value="userValue" <br>
+
+        form
+
+
+
+    </div>
+    <p id="selector"> Select all the options that apply:</p>
+
+    <form>
+
+        <input type="checkbox" id="student1" name="student1" value="high_School">
+        <label for="student">High School student</label><br>
+        <input type="checkbox" id="student2" name="student2" value="College">
+        <label for="student2">college Student</label><br><br>
+        <input type="submit" value="submit">
+
+
+
+    </form>
+
+    <div>
+        <h2> Target attribute</h2>
+        <d>target attribute</d> specifies where to display the response after submiting the form.<br>
+
+        <d> _blank</d> The response is displayed in a new window or tab.<br>
+        <d> _self</d> the response is displayed in the current window.<br>
+        There are other's target attributes.<br>
+
+        <b>Syntax</b><br>
+
+        form action="link_To_Go_To" target ="_blank"<br>
+
+        Example: <d> using _blank</d><br>
+
+        <form action="https://dabanaluintenque.github.io/" target="_blank"><br>
+            <label for='name:'>Name:</label><br>
+            <input type="text" id='name' name="name" value='Dabana '><br>
+            <label for="year">Year:</label><br>
+            <input type="text" id='year' name="Year" value='2022'><br><br>
+            <input type="submit" value="submit">
+
+
+        </form>
+    </div>
+
+
+    <h2> select element</h2>
+    select is choose to defines the drop down menu.<br>
+    <b>Syntax</b> <br>
+
+    form <br>
+    label for ="Label_Name "<br>
+
+    select id ="id_name"<br>
+    option value="value_name"<br>
+    .
+    .
+    . <br>
+
+
+    form <br>
+
+    <p> Example:</p><br>
+
+    Select your favoryte Drink.
+
+    <form action="list_of_choose " target="_blank">
+
+        <label for="drinks">List of the Drinks:</label>
+        <select id="drinks">
+            <option value="mango">Mango_juice</option>
+            <option value="orange">Orange_juice</option>
+            <option value=" sprite">Sprite</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+
+    </div>
+
+
+
+
+    <div>
+        <h2> password input type</h2>
+        <d> password</d> hide the text information.<br>
+
+        <b>Syntax</b><br>
+        form <br>
+        input type = "password" id="pass" name="password" <br>
+        form <br>
+        Example: <br>
+
+        Enter the student email and <strong>password.</strong>
+
+
+        <p id="studentInfo"></p>
+        <form>
+            <label for="studentEmail">Enter email:</label><br>
+            <input type="email" id="studentEmail" name="Student Email"><br>
+            <label for="studentPassword">Enter passWord</label><br>
+            <input type="password" id="studentPassword"><br>
+            <label for="re_enterPass">Re_Enter_Password</label><br>
+            <input type="password" id="reEnterPassword"><br><br>
+            <input type="button" onclick="passwordCheck()" value="Button">
+
+        </form>
+
+    </div>
+
+
+
+
+    <div>
+        <h2> reset input type</h2>
+        <d> reset</d> is a button that reset all the input field to a default value.<br>
+
+        <b>Syntax</b><br>
+        form<br>
+        input type='reset'<br>
+        form<br>
+
+        Example:
+
+        <p id="resetMode"> If you type anything in the box and click reset button it will reset the field.</p>
+
+        <form>
+            <label for="user">Name:</label>
+            <input type="text" id="user" name="userName" value="Jung"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+
+        </form>
+
+    </div>
+
+
+
+
+    <div>
+        <h2>date field</h2>
+        <strong> date field</strong> is used to a field that should contain a date.<br>
+
+        <b>Syntax</b><br>
+
+        form<br>
+        input type="date" id ="Id_name" name="anyName" <br>
+        form<br>
+
+
+        Example: <br>
+        <p id="birthdayInfo"> Enter your birthday info:</p>
+        <form>
+            <label for="birthday">Day of birth</label>
+            <input type="date" id="userBirthday" name="Birthday">
+            <input type="button" onclick="dateOfBirth()" value="Button">
+            <input type="reset" value="cancel">
+        </form>
+
+    </div>
+
+
+
+
+    <div>
+        <h2> number input type</h2>
+        <d><strong>number type</strong></d> defines number's in input field.<br>
+
+        As developer we can specifies the number's restrictions.<br>
+
+        <b>Syntax</b><br>
+        form<br>
+        input type="number" id="anything" name="Numbers" min=0 max= 9<br>
+        form<br>
+
+        <form>
+            <label for="integers">Enter an Intigers Numbers </label>
+            <input type="number" id="integers" name="Numbers" min="0" max="9">
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+
+
+
+
+    <div>
+        <h2> search input type</h2>
+        <d>The <strong>input type="search"</strong></d> is used for search fields.<br>
+        <b>Syntax</b><br>
+        form<br>
+        input type="search" id="id_name" name="SearchFor" <br>
+        form<br>
+        Example:
+
+        <p id="myWeb">search for Dabana</p>
+        <form>
+            <label for="webPage">Search</label>
+            <input type="search" id="webPage" name="Dabana's_Page">
+            <input type="button" onclick="searchWeb()" value="button">
+        </form>
+
+    </div>
+
+
+
+
+    <div>
+        <h2>Tel input type</h2>
+        <d><strong>tel</strong></d> we used for entering a telephone number.<br>
+
+        <b>Syntax</b><br>
+
+        form
+
+        input type = "tel" id="Id_name" pattern ="[0-9]{3}-[0-9]{3}-[0-9]{4}"<br>
+
+        form <br>
+
+
+        <p id="phoneNumber"> Enter your phone number</p>
+
+        <form>
+            <label for="number">What is your phone number?</label>
+            <input type="tel" id="number" placeholder="508-801-1377" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+
+
+            <input type="button" onclick="UserPhoneNumber()" value="Button">
+            <input type="reset">
+        </form>
+
+
+        <div>
+            <h2>Url input type</h2>
+            <d> Url </d> is used to the field the user should enter a url link. <br>
+
+            <b>Syntax</b><br>
+
+            &lt; form &gt; <br>
+            &lt; input type=&quot;url&quot; id=&quot;Id_name&quot; &gt;<br>
+
+            &lt;form &gt; <br>
+
+            Example:<br>
+
+            <p id="searchUrl">Enter your Homepage!</p>
+
+            <form>
+                <label>Url</label>
+                <input type="url" id="urlpage" placeholder="https://urlpagename" required>
+                <input type="button" onclick="urlPage()" value="Button">
+
+                <input type="reset">
+            </form>
+        </div>
+
+
+
+
+        <div>
+            <h2> file input type</h2>
+
+            <d>file input type</d> allow user to appload file from the opperation system. <br>
+
+            <b>Syntax</b> <br>
+            &lt; form &gt;<br>
+            &lt; input type ="file" id="Id_name" &gt;<br>
+
+            &lt; form &gt;
+
+            <p id="upload">Upload your Home Work!</p>
+
+            <form>
+                <label for="hw">HW:</label>
+                <input type="file" id="hw"><br><br>
+                <input type="button" onclick="uploadFile()" value="Submit">
+            </form>
+        </div>
+        <div>
+            <h1>Attributes</h1>
+        </div>
+
+
+
+
+        <div>
+            <h2>size attribute</h2>
+
+            <d>size attribute</d> specifies the width of the textbox. <br>
+
+            <N>Note: </N> by default size width is 20. <br>
+            <b>Syntax</b> <br>
+            &lt;form &gt;<br>
+            &lt; input type ="text" id="id_name" size="anyNumber" &gt;<br>
+            &lt; form &gt;
+
+            Example: <br>
+
+            The first box size is 30 and the second box size is 10.
+            <p id="sizeNunmber"></p>
+
+            <form>
+                <label for="firstBox">First Box</label>
+                <input type="text" id="firstBox" size="30"> <br> <br>
+                <label for="secondBox">Second Box</label>
+                <input type="box" id="secondBox" size="10"><br><br>
+                <input type="submit" value="Sumbit">
+            </form>
+        </div>
+
+
+
+        <div>
+            <h2> maxlength attribute</h2>
+            <d>maxlength</d> attribute specifies the maximun number of length the user must enter in the box.<br>
+
+            <d>Note: </d> When we specifies the maxlength number the user cannot enter more than the maximun length
+            number. <br>
+
+            <b>Syntax:</b> <br>
+
+            &lt; form &gt; <br>
+            &lt; input type ="text" id="id_name" maxlength="anyNumber" &gt; <br>
+
+            &lt; from &gt; <br>
+
+            Example: <br>
+
+            maxlength for student first name is 10 and maxlength for student id is 8.
+            <p id="check"> </p>
+            <form>
+                <label for="studentname"> Enter Student name:</label>
+                <input type="text" id="studentname" maxlength="10"><br> <br>
+                <label for="id"> Enter Student Id: </label>
+                <input type="text" id="id" maxlength="8" size="10"> <br> <br>
+                <input type="button" onclick="checkMaxlength()" value="Button">
+                <input type="reset">
+
+            </form>
+        </div>
+
+
+
+        <div>
+
+            <h2>min and max attributes</h2>
+            <d>min and max attributes</d> specifies the min and max value in the input field.<br>
+            <d>Note:</d>min and max works for: date, range, number...<br>
+
+            <b>Syntax</b><br>
+            &lt; form &gt;<br>
+            &lt; input type ="number" id="id_name" min="anyNumber" max ="anyNumber"><br>
+            &lt; form &gt;<br>
+            Example: <br>
+            Follow the instruction bellow.<br>
+            <p id="minRange">Enter your date of birth</p>
+
+            <form>
+                <label for="after">Enter your date of birth: min is 1900-01-31</label>
+                <input type="date" id="after" min="1900-01-31"><br><br>
+                <input type="button" onclick="checkMin()" value="Button">
+
+            </form>
+
+            <p id="grade"> Enter maximun and minimun grade in comp335 class.</p>
+
+            <form>
+                <label for="gradeList">Enter grade:</label>
+                <input type="number" id="gradeList" placeholder="50" min="50" max="100">
+
+                <input type="button" onclick="checkGrades()" value="Button">
+            </form>
+        </div>
+
+
+        <div>
+
+            <h2> pattern Attribute</h2>
+
+            <d>pattern attribute</d> specifies the pattern that the input value is checked against. <br>
+            <d>Note: </d> Pattern attribute works for: date, search, text, password, url, tell and email;<br>
+
+            <b>Syntax</b><br>
+            &lt; form &gt; <br>
+            &lt; input type ="text" id="id_name" pattern="[A-Za-z]{26}" for letters or pattern="[0-9]{infit}" for
+            number &gt;<br>
+            &lt; form &gt; <br>
+
+            Example: <br>
+
+            Create a password enter letters from A-Z a-z and numbers from 0-9;
+
+            <p id="checkpattern">create a password with one letter and three numbers.</p>
+
+            <form>
+                <label for="passwordPattern">create new password</label>
+                <input type="password" id="passwordPattern" pattern="[A-Za-z]{1}[0-9]{3}" required><br>
+
+                <small>E.g. mypassword is: D177</small><br>
+
+                <input type="submit" value="Submit">
+                <!--
+                <input type="button" onclick="patternAttribute()" value="submit">
+                <input type="reset">-->
+            </form>
+
+        </div>
+
+        <br><br><br>
+        <footer>&copy;Dabana notice</footer>
+        <script src="./app.js"></script>
+</body>
+
+</html>
